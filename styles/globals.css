@@ -1,0 +1,257 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'IndieFlower';
+  src: url('../public/assets/IndieFlower-Regular.ttf') format('truetype');
+}
+
+/* * {
+  border: 1px solid red;
+} */
+
+#address{ word-wrap:break-word;}
+
+.app {
+  background-image: url('../public/assets/background woods.png');
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+
+  /*background-position-x: center;
+  background-position-y: bottom;
+  background-size: 25% auto;
+  background-repeat: no-repeat;
+  animation-duration: 3s;
+  animation-name: grow-to-full;
+  animation-iteration-count: 1; */
+
+  font-family: 'IndieFlower',sans-serif;
+  color:white;
+  /*text-shadow: black 2px 2px;*/
+  text-shadow: 0 0 5px black, 0 0 5px black;
+
+  
+}
+
+#intro, #navbar {
+  background-image: url('../public/assets/bg\ space.png');
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#about {
+  background-image: url('../public/assets/bg\ rainbow.jpg');
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#how-to-buy {
+  background-image: url('../public/assets/bg\ windows\ xp.jpg');
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  background-position: 70% 40%;
+  background-size: cover;
+}
+
+#tokenomics {
+  background-image: url('../public/assets/bg\ mtn\ dew.jpg');
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#roadmap {
+  background-image: url('../public/assets/bg\ underwater.jpg');
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  background-position: 75% center;
+  background-size: cover;
+}
+
+#footer {
+  background-image: url('../public/assets/bg cartoon.jpg');
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+
+  /*background-position-x: center;
+  background-position-y: bottom;
+  background-size: 25% auto;
+  background-repeat: no-repeat;
+  animation-duration: 3s;
+  animation-name: grow-to-full;
+  animation-iteration-count: 1; */
+
+  font-family: 'IndieFlower',sans-serif;
+  color:white;
+  /*text-shadow: black 2px 2px;*/
+  text-shadow: 0 0 5px black, 0 0 5px black;
+
+  
+}
+
+
+@media(width < 650px){
+  #navbar-links li:not(#menu-button) {
+    display:none;
+  }
+  #menu-button {
+    display:block;
+  }
+  
+  #intro, #navbar {
+    background-image: url('../public/assets/bg\ space phone.png');
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #about {
+    background-image: url('../public/assets/bg\ rainbow phone.jpg');
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #how-to-buy {
+    background-image: url('../public/assets/bg\ windows\ xp phone.jpg');
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #tokenomics {
+    background-image: url('../public/assets/bg\ mtn\ dew phone.jpg');
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #roadmap {
+    background-image: url('../public/assets/bg\ underwater phone.jpg');
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #footer {
+    background-image: url('../public/assets/bg cartoon phone.jpg');
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;   
+  }
+}
+
+.fade1 {
+  animation: fadeIn 1s;
+}
+.fade2 {
+  animation: fadeIn 3s;
+}
+.fade3 {
+  animation: fadeIn 5s;
+}
+
+
+/*@media(width < 700px){
+  #nav-full {
+    display:none;
+  }
+
+  #nav-partial {
+    display:block;
+    margin-right: 10px;
+  }
+  #navbar{
+    justify-content:space-between;
+  }
+}*/
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: .25;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+*/
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+/*
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}*/
+
