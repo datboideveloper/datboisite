@@ -10,7 +10,7 @@ function App() {
 
 
   return (
-    <div id="app" className="app max-w-screen-2xl mx-auto text-l box-border">
+    <div id="app" className="app mx-auto text-l box-border">
       <Navigation />
       <Intro />
       <About />
