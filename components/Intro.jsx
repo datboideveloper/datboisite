@@ -34,6 +34,10 @@ function Intro() {
                         </a>
                     </div>
                     <div className="flex flex-wrap gap-3 justify-evenly">
+                        <a href="https://t.me/datboibase" target="_blank" 
+                            className="opacity-70 hover:opacity-100 hover:scale-110">
+                                <Image src={iconTelegram} className=" h-10 w-auto" />
+                        </a>
                         <a href="https://github.com/datboideveloper" target="_blank" 
                             className="opacity-70 hover:opacity-100 hover:scale-110">
                                 <Image src={iconGithub} className=" h-10 w-auto" />
