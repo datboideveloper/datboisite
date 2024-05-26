@@ -6,6 +6,8 @@ import iconDexscreener from '@public/assets/icon dexscreener.png'
 import iconTelegram from '@public/assets/icon telegram.png'
 import iconTwitter from '@public/assets/icon twitter.png'
 import iconUniswap from '@public/assets/icon uniswap.png'
+import iconGithub from '@public/assets/icon github.png'
+import iconDextools from '@public/assets/icon dextools.png'
 
 function Intro() {
     return (
@@ -32,13 +34,13 @@ function Intro() {
                         </a>
                     </div>
                     <div className="flex flex-wrap gap-3 justify-evenly">
-                        <a href="https://t.me/datboibase" target="_blank" 
+                        <a href="https://github.com/datboideveloper" target="_blank" 
                             className="opacity-70 hover:opacity-100 hover:scale-110">
-                                <Image src={iconTelegram} className=" h-10 w-auto" />
+                                <Image src={iconGithub} className=" h-10 w-auto" />
                         </a>
-                        <a href="https://t.me/datboibase" target="_blank" 
+                        <a href="https://www.dextools.io/app/en/base/pair-explorer/0x53ec0454273c75a453c02947caB6d92522793D5b?t=1716738328831" target="_blank" 
                             className="opacity-70 hover:opacity-100 hover:scale-110">
-                                <Image src={iconTelegram} className=" h-10 w-auto" />
+                                <Image src={iconDextools} className=" h-10 w-auto" />
                         </a>
                         <a href="https://x.com/basedatboi" target="_blank" 
                             className="opacity-70 hover:opacity-100 hover:scale-110">
