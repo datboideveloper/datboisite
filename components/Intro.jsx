@@ -6,6 +6,9 @@ import iconDexscreener from '@public/assets/icon dexscreener.png'
 import iconTelegram from '@public/assets/icon telegram.png'
 import iconTwitter from '@public/assets/icon twitter.png'
 import iconUniswap from '@public/assets/icon uniswap.png'
+import iconGithub from '@public/assets/icon github.png'
+import iconDextools from '@public/assets/icon dextools.png'
+import iconCoingecko from '@public/assets/icon coingecko.png'
 
 function Intro() {
     return (
@@ -18,7 +21,7 @@ function Intro() {
                 <div className="fade3 flex flex-col align-middle">
                     <div className="bg-gray-600 bg-opacity-50 hover:bg-opacity-70 hover:scale-110 rounded-lg border-white border-2 mb-8">
                         <p className="text-3xl text-center">Contract Address:</p>
-                        <p id="address" className=" text-sm text-center max-w-[300px]">0x53ec0454273c75a453c02947caB6d92522793D5b</p>
+                        <p id="address" className=" text-sm text-center">0x53ec0454273c75a453c02947caB6d92522793D5b</p>
                     </div>
                     <div className="flex flex-wrap gap-3 justify-evenly pb-4">
                         <button onClick={copyToClipboard} className="text-3xl px-8 py-2 bg-green-800 rounded-lg border-solid
@@ -32,9 +35,21 @@ function Intro() {
                         </a>
                     </div>
                     <div className="flex flex-wrap gap-3 justify-evenly">
+                        <a href="https://www.geckoterminal.com/base/pools/0x028e2b29ecfba168b54645cd8a214b12ddf9d647" target="_blank" 
+                            className="opacity-70 hover:opacity-100 hover:scale-110">
+                                <Image src={iconCoingecko} className=" h-10 w-auto" />
+                        </a>
                         <a href="https://t.me/datboibase" target="_blank" 
                             className="opacity-70 hover:opacity-100 hover:scale-110">
                                 <Image src={iconTelegram} className=" h-10 w-auto" />
+                        </a>
+                        <a href="https://github.com/datboideveloper" target="_blank" 
+                            className="opacity-70 hover:opacity-100 hover:scale-110">
+                                <Image src={iconGithub} className=" h-10 w-auto" />
+                        </a>
+                        <a href="https://www.dextools.io/app/en/base/pair-explorer/0x53ec0454273c75a453c02947caB6d92522793D5b?t=1716738328831" target="_blank" 
+                            className="opacity-70 hover:opacity-100 hover:scale-110">
+                                <Image src={iconDextools} className=" h-10 w-auto" />
                         </a>
                         <a href="https://x.com/basedatboi" target="_blank" 
                             className="opacity-70 hover:opacity-100 hover:scale-110">
@@ -43,10 +58,6 @@ function Intro() {
                         <a href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0x53ec0454273c75a453c02947caB6d92522793D5b&chain=base" target="_blank" 
                              className="opacity-70 hover:opacity-100 hover:scale-110">
                                 <Image src={iconUniswap} className=" h-10 w-auto" />
-                        </a>
-                        <a href="https://dexscreener.com/base/0x028e2b29ecfba168b54645cd8a214b12ddf9d647" target="_blank" 
-                             className="opacity-70 hover:opacity-100 hover:scale-110">
-                                <Image src={iconDexscreener} className=" h-10 w-auto" />
                         </a>
                         <a href="https://basescan.org/address/0x53ec0454273c75a453c02947cab6d92522793d5b" target="_blank" 
                              className="opacity-70 hover:opacity-100 hover:scale-110">
