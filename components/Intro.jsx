@@ -8,6 +8,7 @@ import iconTwitter from '@public/assets/icon twitter.png'
 import iconUniswap from '@public/assets/icon uniswap.png'
 import iconGithub from '@public/assets/icon github.png'
 import iconDextools from '@public/assets/icon dextools.png'
+import iconCoingecko from '@public/assets/icon coingecko.png'
 
 function Intro() {
     return (
@@ -34,6 +35,10 @@ function Intro() {
                         </a>
                     </div>
                     <div className="flex flex-wrap gap-3 justify-evenly">
+                        <a href="https://www.geckoterminal.com/base/pools/0x028e2b29ecfba168b54645cd8a214b12ddf9d647" target="_blank" 
+                            className="opacity-70 hover:opacity-100 hover:scale-110">
+                                <Image src={iconCoingecko} className=" h-10 w-auto" />
+                        </a>
                         <a href="https://t.me/datboibase" target="_blank" 
                             className="opacity-70 hover:opacity-100 hover:scale-110">
                                 <Image src={iconTelegram} className=" h-10 w-auto" />
