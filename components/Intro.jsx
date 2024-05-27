@@ -59,10 +59,6 @@ function Intro() {
                              className="opacity-70 hover:opacity-100 hover:scale-110">
                                 <Image src={iconUniswap} className=" h-10 w-auto" />
                         </a>
-                        <a href="https://dexscreener.com/base/0x028e2b29ecfba168b54645cd8a214b12ddf9d647" target="_blank" 
-                             className="opacity-70 hover:opacity-100 hover:scale-110">
-                                <Image src={iconDexscreener} className=" h-10 w-auto" />
-                        </a>
                         <a href="https://basescan.org/address/0x53ec0454273c75a453c02947cab6d92522793d5b" target="_blank" 
                              className="opacity-70 hover:opacity-100 hover:scale-110">
                                 <Image src={iconBasescan} className=" h-10 w-auto" />
