@@ -21,7 +21,7 @@ function Intro() {
                 <div className="fade3 flex flex-col align-middle">
                     <div className="bg-gray-600 bg-opacity-50 hover:bg-opacity-70 hover:scale-110 rounded-lg border-white border-2 mb-8">
                         <p className="text-3xl text-center">Contract Address:</p>
-                        <p id="address" className=" text-sm text-center max-w-[300px]">0x53ec0454273c75a453c02947caB6d92522793D5b</p>
+                        <p id="address" className=" text-sm text-center">0x53ec0454273c75a453c02947caB6d92522793D5b</p>
                     </div>
                     <div className="flex flex-wrap gap-3 justify-evenly pb-4">
                         <button onClick={copyToClipboard} className="text-3xl px-8 py-2 bg-green-800 rounded-lg border-solid
