@@ -2,13 +2,15 @@
 
 import Image from 'next/image';
 import iconBasescan from '@public/assets/icon basescan.png'
-import iconDexscreener from '@public/assets/icon dexscreener.png'
+//import iconDexscreener from '@public/assets/icon dexscreener.png'
 import iconTelegram from '@public/assets/icon telegram.png'
 import iconTwitter from '@public/assets/icon twitter.png'
 import iconUniswap from '@public/assets/icon uniswap.png'
 import iconGithub from '@public/assets/icon github.png'
 import iconDextools from '@public/assets/icon dextools.png'
 import iconCoingecko from '@public/assets/icon coingecko.png'
+//import whitepaper from '@public/assets/whitepaper.pdf'
+//import roadmap from '@public/assets/roadmap.pdf'
 
 function Intro() {
     return (
@@ -32,6 +34,18 @@ function Intro() {
                             className="text-3xl px-8 py-2 bg-green-800 rounded-lg border-solid
                              border-black border-[1px] opacity-70 hover:opacity-100">
                                 Buy Now
+                        </a>
+                    </div>
+                    <div className="flex flex-wrap gap-3 justify-evenly pb-4">
+                        <a href='./assets/whitepaper.pdf' download="whitepaper.pdf" target="_blank" locale={false}
+                            className="text-3xl px-8 py-2 bg-green-800 rounded-lg border-solid
+                             border-black border-[1px] opacity-70 hover:opacity-100">
+                                White Paper
+                        </a>
+                        <a href='./assets/roadmap.pdf' download="roadmap.pdf" target="_blank" locale={false}
+                            className="text-3xl px-8 py-2 bg-green-800 rounded-lg border-solid
+                             border-black border-[1px] opacity-70 hover:opacity-100">
+                                Road Map
                         </a>
                     </div>
                     <div className="flex flex-wrap gap-3 justify-evenly">
