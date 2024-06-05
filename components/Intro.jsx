@@ -9,8 +9,8 @@ import iconUniswap from '@public/assets/icon uniswap.png'
 import iconGithub from '@public/assets/icon github.png'
 import iconDextools from '@public/assets/icon dextools.png'
 import iconCoingecko from '@public/assets/icon coingecko.png'
-import whitepaper from '@public/assets/whitepaper.pdf'
-import roadmap from '@public/assets/roadmap.pdf'
+//import whitepaper from '@public/assets/whitepaper.pdf'
+//import roadmap from '@public/assets/roadmap.pdf'
 
 function Intro() {
     return (
@@ -37,12 +37,12 @@ function Intro() {
                         </a>
                     </div>
                     <div className="flex flex-wrap gap-3 justify-evenly pb-4">
-                        <a download href={whitepaper} target="_blank" locale={false}
+                        <a download href="./whitepaper.pdf" target="_blank" locale={false}
                             className="text-3xl px-8 py-2 bg-green-800 rounded-lg border-solid
                              border-black border-[1px] opacity-70 hover:opacity-100">
                                 White Paper
                         </a>
-                        <a download href={roadmap} target="_blank" locale={false}
+                        <a download href="./roadmap.pdf" target="_blank" locale={false}
                             className="text-3xl px-8 py-2 bg-green-800 rounded-lg border-solid
                              border-black border-[1px] opacity-70 hover:opacity-100">
                                 Road Map
