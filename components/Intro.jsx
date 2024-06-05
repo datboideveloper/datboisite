@@ -9,8 +9,8 @@ import iconUniswap from '@public/assets/icon uniswap.png'
 import iconGithub from '@public/assets/icon github.png'
 import iconDextools from '@public/assets/icon dextools.png'
 import iconCoingecko from '@public/assets/icon coingecko.png'
-//import whitepaper from '@public/assets/whitepaper.pdf'
-//import roadmap from '@public/assets/roadmap.pdf'
+import whitepaper from '@public/assets/whitepaper.pdf'
+import roadmap from '@public/assets/roadmap.pdf'
 
 function Intro() {
     return (
