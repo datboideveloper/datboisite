@@ -35,10 +35,11 @@ function Intro() {
                         </a>
                     </div>
                     <div className="flex flex-wrap gap-3 justify-evenly pb-4">
-                        <button onClick={copyToClipboard} className="text-3xl px-8 py-2 bg-green-800 rounded-lg border-solid
+                        <a href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0x53ec0454273c75a453c02947caB6d92522793D5b&chain=base" target="_blank" 
+                            className="text-3xl px-8 py-2 bg-green-800 rounded-lg border-solid
                              border-black border-[1px] opacity-70 hover:opacity-100">
-                                Copy
-                        </button>
+                                Buy Now
+                        </a>
                         <a href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0x53ec0454273c75a453c02947caB6d92522793D5b&chain=base" target="_blank" 
                             className="text-3xl px-8 py-2 bg-green-800 rounded-lg border-solid
                              border-black border-[1px] opacity-70 hover:opacity-100">
