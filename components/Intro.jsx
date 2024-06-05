@@ -37,12 +37,12 @@ function Intro() {
                         </a>
                     </div>
                     <div className="flex flex-wrap gap-3 justify-evenly pb-4">
-                        <a href="@public/assets/whitepaper.pdf" target="_blank"
+                        <a href={whitepaper} target="_blank"
                             className="text-3xl px-8 py-2 bg-green-800 rounded-lg border-solid
                              border-black border-[1px] opacity-70 hover:opacity-100">
                                 White Paper
                         </a>
-                        <a href="@public/assets/roadmap.pdf" target="_blank" 
+                        <a href={roadmap} target="_blank" 
                             className="text-3xl px-8 py-2 bg-green-800 rounded-lg border-solid
                              border-black border-[1px] opacity-70 hover:opacity-100">
                                 Road Map
