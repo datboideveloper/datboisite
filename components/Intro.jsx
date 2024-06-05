@@ -33,6 +33,16 @@ function Intro() {
                              border-black border-[1px] opacity-70 hover:opacity-100">
                                 Buy Now
                         </a>
+                        <a href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0x53ec0454273c75a453c02947caB6d92522793D5b&chain=base" target="_blank" 
+                            className="text-3xl px-8 py-2 bg-green-800 rounded-lg border-solid
+                             border-black border-[1px] opacity-70 hover:opacity-100">
+                                Buy Now
+                        </a>
+                        <a href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0x53ec0454273c75a453c02947caB6d92522793D5b&chain=base" target="_blank" 
+                            className="text-3xl px-8 py-2 bg-green-800 rounded-lg border-solid
+                             border-black border-[1px] opacity-70 hover:opacity-100">
+                                Buy Now
+                        </a>
                     </div>
                     <div className="flex flex-wrap gap-3 justify-evenly">
                         <a href="https://www.geckoterminal.com/base/pools/0x028e2b29ecfba168b54645cd8a214b12ddf9d647" target="_blank" 
