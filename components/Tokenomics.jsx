@@ -2,7 +2,7 @@
 function Tokenomics() {
     const points = [
         {title:'Total Supply', subpoints: ['1,000,000,000']},
-        {title:'Initial Distribution', subpoints: ['100% into Uniswap Liquidity Pool']},
+        {title:'Initial Distribution', subpoints: ['99% into Uniswap Liquidity Pool']},
         {title:'Taxes', subpoints: ['0%']},
         //{title:'Liquidity Pool', subpoints: ['Locked for 100 years']},
         {title:'Ownership', subpoints: ['Contract Renounced']},

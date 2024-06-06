@@ -2,20 +2,20 @@
 function Roadmap() {
     const phases = [
         {
-            title:'Phase 1', 
-            subpoints: ['Initial Launch','DEX Listings','Ownership Renounced','Community Takeover']
+            title:'Phase 1 (COMPLETE)', 
+            subpoints: ['Deployment','DEX Listings','Ownership Renounced','Community Takeover']
         },
         {
             title:'Phase 2', 
-            subpoints: ['CEX Listings','10,000+ Holders','Partnerships','Community Contests']
+            subpoints: ['Establish web presence','Decide goals & future','Partnerships','Community Contests']
         },
         {
             title:'Phase 3', 
-            subpoints: ['Tier 1 Listings','Official Merch','50,000+ Holders','Frog Crossover Event?']
+            subpoints: ['Official merchandise','Gaming DAPP','Advertising','Media campaign']
         },
         {
             title:'Phase 4', 
-            subpoints: ['NFT Collection','100,000+ Holders','Normie Recognition']
+            subpoints: ['NFT Collection','Commercial deals','DeFi Staking','Gold check mark on X']
         }
     ]
 
