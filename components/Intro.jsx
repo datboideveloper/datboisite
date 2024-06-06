@@ -9,6 +9,7 @@ import iconUniswap from '@public/assets/icon uniswap.png'
 import iconGithub from '@public/assets/icon github.png'
 import iconDextools from '@public/assets/icon dextools.png'
 import iconCoingecko from '@public/assets/icon coingecko.png'
+import iconInstagram from '@public/assets/icon instagram.png'
 //import whitepaper from '@public/assets/whitepaper.pdf'
 //import roadmap from '@public/assets/roadmap.pdf'
 
@@ -76,6 +77,10 @@ function Intro() {
                         <a href="https://basescan.org/address/0x53ec0454273c75a453c02947cab6d92522793d5b" target="_blank" 
                              className="opacity-70 hover:opacity-100 hover:scale-110">
                                 <Image src={iconBasescan} className=" h-10 w-auto" />
+                        </a>
+                        <a href="https://www.instagram.com/basedatboi/" target="_blank" 
+                             className="opacity-70 hover:opacity-100 hover:scale-110">
+                                <Image src={iconInstagram} className=" h-10 w-auto" />
                         </a>
                     </div>
                 </div>
