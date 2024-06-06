@@ -7,9 +7,9 @@ import iconTelegram from '@public/assets/icon telegram.png'
 import iconTwitter from '@public/assets/icon twitter.png'
 import iconUniswap from '@public/assets/icon uniswap.png'
 import iconGithub from '@public/assets/icon github.png'
-import iconDextools from '@public/assets/icon dextools.png'
+//import iconDextools from '@public/assets/icon dextools.png'
+import iconInstagram from '@public/assets/IGLogo.png'
 import iconCoingecko from '@public/assets/icon coingecko.png'
-import iconInstagram from '@public/assets/icon instagram.png'
 //import whitepaper from '@public/assets/whitepaper.pdf'
 //import roadmap from '@public/assets/roadmap.pdf'
 
@@ -62,9 +62,9 @@ function Intro() {
                             className="opacity-70 hover:opacity-100 hover:scale-110">
                                 <Image src={iconGithub} className=" h-10 w-auto" />
                         </a>
-                        <a href="https://www.dextools.io/app/en/base/pair-explorer/0x53ec0454273c75a453c02947caB6d92522793D5b?t=1716738328831" target="_blank" 
+                        <a href="https://www.instagram.com/basedatboi/" target="_blank" 
                             className="opacity-70 hover:opacity-100 hover:scale-110">
-                                <Image src={iconDextools} className=" h-10 w-auto" />
+                                <Image src={iconInstagram} className=" h-10 w-auto" />
                         </a>
                         <a href="https://x.com/basedatboi" target="_blank" 
                             className="opacity-70 hover:opacity-100 hover:scale-110">
