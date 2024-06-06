@@ -78,10 +78,6 @@ function Intro() {
                              className="opacity-70 hover:opacity-100 hover:scale-110">
                                 <Image src={iconBasescan} className=" h-10 w-auto" />
                         </a>
-                        <a href="https://www.instagram.com/basedatboi/" target="_blank" 
-                             className="opacity-70 hover:opacity-100 hover:scale-110">
-                                <Image src={iconInstagram} className=" h-10 w-auto" />
-                        </a>
                     </div>
                 </div>
             </div>
