@@ -90,7 +90,7 @@ function ScrollToTopButton() {
       className="fixed right-[2vh] bottom-[2vh] z-40 hover:scale-110 px-2 py-2"
       onClick={ScrollToTop}
     >
-      <Image className="bg-opacity-50" src={ArrowUp} />
+      <Image className="bg-opacity-50" src={ArrowUp} alt="Navigation" />
     </button>
   );
 }
