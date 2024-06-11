@@ -74,49 +74,65 @@ function Intro() {
               target="_blank"
               className="opacity-70 hover:opacity-100 hover:scale-110"
             >
-              <Image src={iconCoingecko} className=" h-10 w-auto" />
+              <Image
+                src={iconCoingecko}
+                className=" h-10 w-auto"
+                alt="Coingecko"
+              />
             </a>
             <a
               href="https://t.me/datboibase"
               target="_blank"
               className="opacity-70 hover:opacity-100 hover:scale-110"
             >
-              <Image src={iconTelegram} className=" h-10 w-auto" />
+              <Image
+                src={iconTelegram}
+                className=" h-10 w-auto"
+                alt="Telegram"
+              />
             </a>
             <a
               href="https://github.com/datboideveloper"
               target="_blank"
               className="opacity-70 hover:opacity-100 hover:scale-110"
             >
-              <Image src={iconGithub} className=" h-10 w-auto" />
+              <Image src={iconGithub} className=" h-10 w-auto" alt="Github" />
             </a>
             <a
               href="https://www.instagram.com/basedatboi/"
               target="_blank"
               className="opacity-70 hover:opacity-100 hover:scale-110"
             >
-              <Image src={iconInstagram} className=" h-10 w-auto" />
+              <Image
+                src={iconInstagram}
+                className=" h-10 w-auto"
+                alt="Instagram"
+              />
             </a>
             <a
               href="https://x.com/basedatboi"
               target="_blank"
               className="opacity-70 hover:opacity-100 hover:scale-110"
             >
-              <Image src={iconTwitter} className=" h-10 w-auto" />
+              <Image src={iconTwitter} className=" h-10 w-auto" alt="X" />
             </a>
             <a
               href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0x53ec0454273c75a453c02947caB6d92522793D5b&chain=base"
               target="_blank"
               className="opacity-70 hover:opacity-100 hover:scale-110"
             >
-              <Image src={iconUniswap} className=" h-10 w-auto" />
+              <Image src={iconUniswap} className=" h-10 w-auto" alt="Uniswap" />
             </a>
             <a
               href="https://basescan.org/address/0x53ec0454273c75a453c02947cab6d92522793d5b"
               target="_blank"
               className="opacity-70 hover:opacity-100 hover:scale-110"
             >
-              <Image src={iconBasescan} className=" h-10 w-auto" />
+              <Image
+                src={iconBasescan}
+                className=" h-10 w-auto"
+                alt="BaseScan"
+              />
             </a>
           </div>
         </div>
