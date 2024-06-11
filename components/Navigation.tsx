@@ -98,8 +98,11 @@ function ScrollToTopButton() {
 function toggleSidebar() {
   const sidebar = document.querySelector("#sidebar");
   if (!sidebar) return;
-  if ((sidebar as HTMLElement).style.display === "none") {
-    (sidebar as HTMLElement).style.display = "";
+  if (
+    (sidebar as HTMLElement).style.display === "none" ||
+    !(sidebar as HTMLElement).style.display
+  ) {
+    (sidebar as HTMLElement).style.display = "flex";
   } else {
     (sidebar as HTMLElement).style.display = "none";
   }
