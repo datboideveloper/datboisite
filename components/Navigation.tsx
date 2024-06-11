@@ -108,7 +108,7 @@ function toggleSidebar() {
 function ScrollToTop() {
   document.documentElement.scrollTo({
     top: 0,
-    behvaior: "smooth",
+    behavior: "smooth",
   });
 }
 
