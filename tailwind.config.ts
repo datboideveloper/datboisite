@@ -1,19 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  /**webpack: (config: any, { isServer: any }) => {
-    config.module.rules.push({
-      test: /\.(png|jpg|jpeg|gif|svg)$/,
-      use: {
-        loader: "file-loader",
-        options: {
-          publicPath: "/_next/static/images",
-          outputPath: "static/images/",
-        },
-      },
-    });
-
-    return config;
-  },**/
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
