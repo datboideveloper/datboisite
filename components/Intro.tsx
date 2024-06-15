@@ -143,7 +143,7 @@ function Intro() {
 
 function copyToClipboard() {
   // Get the text field
-  var copyText = document.getElementById("address").textContent;
+  var copyText = document.getElementById("address")!.textContent;
 
   console.log(copyText);
 
