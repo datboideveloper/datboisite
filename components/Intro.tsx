@@ -2,16 +2,12 @@
 
 import Image from "next/image";
 import iconBasescan from "@public/assets/icon basescan.png";
-//import iconDexscreener from '@public/assets/icon dexscreener.png'
 import iconTelegram from "@public/assets/icon telegram.png";
 import iconTwitter from "@public/assets/icon twitter.png";
 import iconUniswap from "@public/assets/icon uniswap.png";
 import iconGithub from "@public/assets/icon github.png";
-//import iconDextools from '@public/assets/icon dextools.png'
 import iconInstagram from "@public/assets/IGLogo.png";
 import iconCoingecko from "@public/assets/icon coingecko.png";
-//import whitepaper from '@public/assets/whitepaper.pdf'
-//import roadmap from '@public/assets/roadmap.pdf'
 
 function Intro() {
   return (
