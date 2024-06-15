@@ -11,13 +11,13 @@
   "dependencies": {
     "@rainbow-me/rainbowkit": "^2.1.2",
     "@react-pdf/renderer": "^3.4.4",
-    "@tanstack/react-query": "^5.45.0",
+    "@tanstack/react-query": "^5.44.0",
     "next": "^14.2.4",
     "node-modules": "^1.0.1",
     "react": "^18",
     "react-dom": "^18",
-    "viem": "^2.14.1",
-    "wagmi": "^2.10.2"
+    "viem": "^2.13.8",
+    "wagmi": "^2.9.12"
   },
   "devDependencies": {
     "@types/node": "^20.14.2",

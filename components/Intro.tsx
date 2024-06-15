@@ -132,6 +132,9 @@ function Intro() {
               />
             </a>
           </div>
+          <div className="flex flex-wrap gap-3 justify-evenly">
+            <ConnectButton />
+          </div>
         </div>
       </div>
     </div>
