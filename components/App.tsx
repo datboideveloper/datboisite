@@ -1,3 +1,5 @@
+"use client";
+
 import Intro from "./Intro.tsx";
 import About from "./About.tsx";
 import HowToBuy from "./HowToBuy.tsx";
@@ -9,6 +11,15 @@ import { getDefaultConfig, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { WagmiProvider } from "wagmi";
 import { base } from "wagmi/chains";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
+
+const config = getDefaultConfig({
+  appName: "Dat Boi",
+  projectId: "34e923b3767d39d66c3413fe1689f695",
+  chains: [base],
+  ssr: true, // If your dApp uses server side rendering (SSR)
+});
+
+const queryClient = new QueryClient();
 
 function App() {
   return (
