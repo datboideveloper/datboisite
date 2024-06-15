@@ -115,13 +115,13 @@ function ScrollToTop() {
   });
 }
 
-function scrollToId(id) {
+function scrollToId({ id }: { id: any }) {
   console.log(id);
   if (id.startsWith("#")) {
     id = id.substring(1);
   }
   console.log(id);
-  let scrollId = document.getElementById({id}:{id:any});
+  let scrollId = document.getElementById(id);
   console.log(scrollId);
   if (!scrollId) return;
   scrollId.scrollTo({
