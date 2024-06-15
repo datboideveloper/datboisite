@@ -5,6 +5,10 @@ import Tokenomics from "./Tokenomics.tsx";
 import Roadmap from "./Roadmap.tsx";
 import Footer from "./Footer.tsx";
 import Navigation from "./Navigation.tsx";
+import { getDefaultConfig, RainbowKitProvider } from "@rainbow-me/rainbowkit";
+import { WagmiProvider } from "wagmi";
+import { base } from "wagmi/chains";
+import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 
 function App() {
   return (

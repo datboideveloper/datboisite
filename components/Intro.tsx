@@ -8,6 +8,7 @@ import iconUniswap from "@public/assets/icon uniswap.png";
 import iconGithub from "@public/assets/icon github.png";
 import iconInstagram from "@public/assets/IGLogo.png";
 import iconCoingecko from "@public/assets/icon coingecko.png";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 function Intro() {
   return (
