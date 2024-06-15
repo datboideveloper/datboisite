@@ -121,7 +121,7 @@ function scrollToId(id) {
     id = id.substring(1);
   }
   console.log(id);
-  let scrollId = document.getElementById(id);
+  let scrollId = document.getElementById({id}:{id:any});
   console.log(scrollId);
   if (!scrollId) return;
   scrollId.scrollTo({
