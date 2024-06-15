@@ -9,13 +9,13 @@ import Footer from "./Footer.tsx";
 import Navigation from "./Navigation.tsx";
 import { getDefaultConfig, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { WagmiProvider } from "wagmi";
-import { mainnet, base } from "wagmi/chains";
+import { mainnet } from "wagmi/chains";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 
 const config = getDefaultConfig({
   appName: "Dat Boi",
   projectId: "34e923b3767d39d66c3413fe1689f695",
-  chains: [mainnet, base],
+  chains: [mainnet],
   ssr: true, // If your dApp uses server side rendering (SSR)
 });
 
@@ -23,15 +23,24 @@ const queryClient = new QueryClient();
 
 function App() {
   return (
-    <div id="app" className="app max-w-screen-2xl mx-auto text-l box-border">
-      <Navigation />
-      <Intro />
-      <About />
-      <HowToBuy />
-      <Tokenomics />
-      <Roadmap />
-      <Footer />
-    </div>
+    <WagmiProvider config={config}>
+      <QueryClientProvider client={queryClient}>
+        <RainbowKitProvider>
+          <div
+            id="app"
+            className="app max-w-screen-2xl mx-auto text-l box-border"
+          >
+            <Navigation />
+            <Intro />
+            <About />
+            <HowToBuy />
+            <Tokenomics />
+            <Roadmap />
+            <Footer />
+          </div>
+        </RainbowKitProvider>
+      </QueryClientProvider>
+    </WagmiProvider>
   );
 }
 
