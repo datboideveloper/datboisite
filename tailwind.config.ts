@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  webpack: (config: any, { isServer }) => {
+  webpack: (config: any, { isServer: any }) => {
     config.module.rules.push({
       test: /\.(png|jpg|jpeg|gif|svg)$/,
       use: {
