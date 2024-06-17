@@ -2,15 +2,92 @@
 
 import Image from "next/image";
 import iconBasescan from "@public/assets/icon basescan.png";
+//import iconDexscreener from '@public/assets/icon dexscreener.png'
 import iconTelegram from "@public/assets/icon telegram.png";
 import iconTwitter from "@public/assets/icon twitter.png";
 import iconUniswap from "@public/assets/icon uniswap.png";
 import iconGithub from "@public/assets/icon github.png";
+//import iconDextools from '@public/assets/icon dextools.png'
 import iconInstagram from "@public/assets/IGLogo.png";
 import iconCoingecko from "@public/assets/icon coingecko.png";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+//import whitepaper from '@public/assets/whitepaper.pdf'
+//import roadmap from '@public/assets/roadmap.pdf'
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+import {
+  useAccount,
+  useConnect,
+  useReadContract,
+  useWriteContract,
+  useWaitForTransactionReceipt,
+} from "wagmi";
+//import { ethers } from "ethers";
+import { useState, useEffect } from "react";
+import abi from "./Abi.tsx";
 
 function Intro() {
+  /*
+    USEFUL LINKS FOR WORKING WITH WALLETS/CONTRACT FUNCTIONS
+
+    Wagmi+RainbowKit Guide (has depreciated functions that need updating, otherwise useful):
+      https://billyjitsu.hashnode.dev/the-rainbowkit-wagmi-guide-i-wish-i-had#heading-the-front-end
+    
+    Wagmi documentation read contract:
+      https://wagmi.sh/vue/api/composables/useReadContract
+
+    RainbowKit wallet connect:
+      https://www.rainbowkit.com/docs/connect-button
+
+  */
+
+
+
+  //shows all info for current connected wallet
+  const connectedWallet = useAccount();
+
+  //if connected wallet exists, it will have an address.  Only display functions if so
+  useEffect(
+    () => {
+      if(connectedWallet.address){
+          document!.getElementById("walletFunctions")!.style.display = "flex";
+          console.log(connectedWallet);
+          
+      }
+      else {
+        document!.getElementById("walletFunctions")!.style.display = "hidden";
+        console.log(connectedWallet);
+      }
+    },
+    [connectedWallet]
+  )
+
+
+  //contract info
+  const contractAddress = '0x53ec0454273c75a453c02947caB6d92522793D5b';
+  const contractAbi = abi;
+
+  //balance
+  const [balance, setBalance] = useState(0);
+
+  // GetBalance
+  const { data: balanceOfData } = useReadContract({
+    address: contractAddress,
+    abi: contractAbi,
+    functionName: "balanceOf",
+    args:[connectedWallet.address],
+  });
+
+  //update balance and rerender component
+  useEffect(() => {
+    if(balanceOfData){
+      let temp = Math.floor(Number(balanceOfData) / 10 ** 18);
+      setBalance(temp);
+    }
+    else {
+      setBalance(0);
+    }
+  },[balanceOfData])
+
+
   return (
     <div
       id="intro"
@@ -132,8 +209,13 @@ function Intro() {
               />
             </a>
           </div>
-          <div className="flex flex-wrap gap-3 justify-evenly">
-            <ConnectButton />
+          <div className="p-3 flex flex-wrap gap-3 justify-evenly">
+            <ConnectButton showBalance = {false} />
+          </div>
+          <div id="walletFunctions" className="p-3 hidden flex-wrap gap-3 justify-evenly">
+            <div id="functionBalanceOf">
+                Balance: {balance}
+            </div>
           </div>
         </div>
       </div>
@@ -143,17 +225,16 @@ function Intro() {
 
 function copyToClipboard() {
   // Get the text field
-  var copyText = document.getElementById("address")!.textContent;
+  var copyText: string = document!.getElementById("address")!.textContent!;
 
   console.log(copyText);
 
   // Copy the text inside the text field
-  if (copyText) {
-    navigator.clipboard.writeText(copyText);
-  }
+  navigator.clipboard.writeText(copyText);
 
   // Alert the copied text
   alert("Copied the text: " + copyText);
 }
+
 
 export default Intro;

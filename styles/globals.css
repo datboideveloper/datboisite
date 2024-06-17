@@ -13,6 +13,7 @@
 
 #address{ word-wrap:break-word;}
 
+
 .app {
   background-image: url('../public/assets/background woods.png');
   background-blend-mode: overlay;
@@ -159,6 +160,7 @@
   }
 }
 
+/*
 .fade1 {
   animation: fadeIn 1s;
 }
@@ -168,7 +170,7 @@
 .fade3 {
   animation: fadeIn 5s;
 }
-
+*/
 
 /*@media(width < 700px){
   #nav-full {

@@ -7,7 +7,7 @@ import Tokenomics from "./Tokenomics.tsx";
 import Roadmap from "./Roadmap.tsx";
 import Footer from "./Footer.tsx";
 import Navigation from "./Navigation.tsx";
-import { getDefaultConfig, RainbowKitProvider } from "@rainbow-me/rainbowkit";
+import { getDefaultConfig, RainbowKitProvider, darkTheme } from "@rainbow-me/rainbowkit";
 import { WagmiProvider } from "wagmi";
 import { mainnet, base } from "@wagmi/core/chains";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
@@ -25,7 +25,18 @@ function App() {
   return (
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
-        <RainbowKitProvider>
+        <RainbowKitProvider
+          id='rainbowKit' 
+          initialChain={base}
+          theme={darkTheme({
+            accentColor: '#166534',
+            accentColorForeground: 'white',
+            borderRadius: 'small',
+            fontStack: 'system',
+            overlayBlur: 'small',
+          
+          })}
+          >
           <div
             id="app"
             className="app max-w-screen-2xl mx-auto text-l box-border"
